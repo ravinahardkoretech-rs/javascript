@@ -1,0 +1,103 @@
+<html>
+    <style>
+        #container{
+            width:400px;
+            height:400px;
+            position:relative;
+            background:rgb(116, 32, 32);
+        }
+        #animate{
+            width:50px;
+            height:50px;
+            position:absolute;
+            background-color: cadetblue;
+        }
+        #box{
+            width:200px;
+            height:100px;
+            padding:16px;
+            border:1px solid#000;
+        }
+    </style>
+
+<body>
+    <h2>What can javascript do?</h2>
+    <p>Javascript can change Html attrivute values.</p>
+    <p>
+        In this case JavaScript changes the value of the src (source) attribute of
+        an image.
+    </p>
+    <button onclick="document.getElementById('myImage').src = 'pic_bulbon.gif'">
+        Turn on the bulb
+    </button>
+    <img id="myImage" src="pic_bulboff.gif" style="width: 100px" />
+    <button onclick="document.getElementById('myImage').src = 'pic_bulboff.gif'">
+        Turn off the bulb</button><br />
+    <br />
+    <p id="demo">Javascript can change the style of an Html document.</p>
+    <button type="button" onclick="document.getElementById('demo').style.fontSize = '35px'">
+        Change Style!</button><br />
+    <p id="hidden" style="display: none">Hello JavaScript!</p>
+    <button type="button" onclick="getElementById('hidden').style.display = 'block'">
+        Show hidden Statement!
+    </button>
+    <button type="button" onclick="document.getElementById('hidden').style.display = 'none'">
+        Hide the statement!</button><br />
+    <p id="inner"></p>
+    <p id="change">A Paragraph</p>
+    <button type="button" onclick="myFunction()">Change para</button><br />
+    <button type="button" onclick="document.write(5 + 6)">Add</button><br />
+    <button type="button" onclick="alert('You Made Alert Button')">Alert</button><br />
+    <button onclick="window.print()">Print this page</button><br />
+    <p id="age"></p>
+    <p id="no"></p>
+    <p id="noo"></p>
+    <p id="cars"></p>
+    <p id="math"></p>
+    <p>Enter your age to see if you can vote:</p>
+    <input id="voting" value="18" />
+    <button onclick="vote()">Done</button>
+    <p id="votes"></p>
+    <p id="drive"></p>
+    <p>A time-based greeting:</p>
+    <p id="time"></p>
+    <h2>JavaScript Math.random()</h2>
+    <p id="site"></p>
+    <h2>The switch Statement</h2>
+    <p id="days"></p>
+    <h2>The for Loop</h2>
+    <p id="loop"></p>
+    <h2>The continue Statement</h2>
+    <p id="continue"></p>
+    <h2>JavaScript HTML DOM</h2>
+    <img id="image" src="smiley.gif" width="160" height="120" />
+    <p>
+        The original image was smiley.gif, but the script changed it to
+        landscape.jpg
+    </p>
+    <p id="dite"></p>
+    <p><button onclick="myMove()">Move Me</button></p>
+    <div id="container">
+        <div id="animate"></div>
+    </div>
+
+    <h2>The mouseover and mouseout Events</h2>
+    <div id="box">Move mouse over this box!</div>
+
+    <h2>The setInterval() Method</h2>
+    <button id="start">Start Counter</button>
+    <button id="stop">Stop</button>
+    <p id="counter">0</p>
+    <h2>The oninput Attribute</h2>
+    Enter your name:<input type="text" id="dname" oninput="upperCase()">
+
+    <h2>To-Do List</h2>
+    <input id="task" placeholder="New Task">
+    <button onclick="addTask()">Add</button>
+    <ul id="list"></ul>
+    <button onclick="clearAll()">Clear All</button>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
