@@ -107,7 +107,7 @@ loop1: for (let j = 1; j < 5; j++) {
 }
 document.getElementById("continue").innerHTML = cont;
 
-document.getElementById("image").src = "landscape.jpg";
+document.getElementById("image").src = "/images/landscape.jpg";
 
 document.getElementById("dite").innerHTML = "Date : " + Date();
 
